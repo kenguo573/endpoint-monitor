@@ -290,11 +290,6 @@
                 ],
                 "envFrom": [
                  {"secretRef": {"name": "${STREAMS_USER_SECRET}"}}
-                ],
-                "command": [
-                  "bash",
-                  "-c",
-                  "sleep infinity"
                 ]
               }
             ]
