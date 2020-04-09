@@ -3,6 +3,11 @@
 
 import os
 import re
+import logging
+
+logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
+
+LOGGER = logging.getLogger('streamsx.endpoint_monitor.app')
 
 def _convert_name_to_ev(name):
     return name.upper().replace('-', '_')

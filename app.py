@@ -61,6 +61,7 @@ info.main()
 
 # Name of the IbmStreamsInstance object
 instance_name = os.environ['STREAMSX_ENDPOINT_INSTANCE']
+LOGGER.info("instance name: %s", instance_name)
 sws_service = streams_openshift.get_sws_service(instance_name)
 
 if not sws_service:
