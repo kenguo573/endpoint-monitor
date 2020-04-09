@@ -280,7 +280,7 @@
                 },
                 "resources": {
                     "limits": {
-                        "memory": "${MEMORY_LIMIT}"
+                        "memory": "1024Mi"
                     }
                 },
                 "env": [
