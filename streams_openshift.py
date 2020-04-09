@@ -14,7 +14,6 @@ def _find_env_var(pattern):
 
 def get_sws_service(instance_name):
     ievn = _convert_name_to_ev(instance_name)
-    print(ievn + '_CONSOLE_SERVICE_HOST')
     host = _find_env_var(ievn + '_CONSOLE_SERVICE_HOST')
     port = _find_env_var(ievn + '_CONSOLE_SERVICE_PORT')
     if host and port:
